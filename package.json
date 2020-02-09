@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -15,14 +14,10 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.2.0",
-    "@vue/cli-plugin-eslint": "^4.2.0",
     "@vue/cli-plugin-router": "^4.2.0",
     "@vue/cli-plugin-vuex": "^4.2.0",
     "@vue/cli-service": "^4.2.0",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.1.2",
-    "lint-staged": "^9.5.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -42,14 +37,5 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ],
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,vue}": [
-      "vue-cli-service lint",
-      "git add"
-    ]
-  }
+  ]
 }
